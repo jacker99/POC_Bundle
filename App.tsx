@@ -113,8 +113,8 @@ const App = (props: any) => {
         <View style={styles.balanceSection}>
           <Text style={styles.balanceQuestion}>¿Cuánto tengo?</Text>
           <Text style={styles.balanceAmount}>$3.300,00</Text>
-          <Text style={styles.balanceStatus}>Bienvenido </Text>
-          <TouchableOpacity>
+          <Text style={styles.balanceStatus}>Bienvenido {nombre} </Text>
+          <TouchableOpacity onPress={abrirBundleBlue}>
             <Text style={styles.verMas}>Ver más</Text>
           </TouchableOpacity>
         </View>
@@ -139,7 +139,7 @@ const App = (props: any) => {
             <Text style={styles.actionText}>Recargas</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.actionButton, styles.moreButton]}>
+          <TouchableOpacity style={[styles.actionButton, styles.moreButton]} onPress={manejarPresion}>
             {/* Icono de Más */}
             <Text style={styles.moreIcon}>+</Text>
             <Text style={styles.actionText}>Más</Text>
